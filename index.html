@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -22,6 +21,7 @@
                 <a href="#servicii" class="btn-primary">Vezi Serviciile</a>
                 <a href="#contact" class="btn-secondary">Cere Ofertă</a>
             </div>
+            <a href="tel:+40761198318" class="phone-link">📞 0761 198 318</a>
         </div>
     </header>
 
@@ -155,11 +155,12 @@
     <section id="contact" class="contact">
         <h2>Cere o Ofertă Gratuită</h2>
         <p>Completează formularul și un consultant CENTRALE GAZ te va contacta în cel mai scurt timp pentru a stabili detaliile intervenției.</p>
+        <a href="tel:+40761198318" class="phone-link contact-phone">📞 Sau sună-ne direct: 0761 198 318</a>
         <form class="contact-form">
-            <input type="text" name="nume" placeholder="Nume complet" required>
-            <input type="tel" name="telefon" placeholder="Număr de telefon" required>
-            <input type="email" name="email" placeholder="Adresă email" required>
-            <textarea name="mesaj" placeholder="Spune-ne pe scurt de ce ai nevoie (instalare, revizie, reparație...)" required></textarea>
+            <input type="text" name="nume" autocomplete="name" placeholder="Nume complet" required>
+            <input type="tel" name="telefon" autocomplete="tel" placeholder="Număr de telefon" required>
+            <input type="email" name="email" autocomplete="email" placeholder="Adresă email" required>
+            <textarea name="mesaj" autocomplete="off" placeholder="Spune-ne pe scurt de ce ai nevoie (instalare, revizie, reparație...)" required></textarea>
             <button type="submit" class="btn-primary">Trimite Cererea</button>
         </form>
         <p class="contact-note">Răspundem în maximum 24 de ore lucrătoare.</p>
@@ -167,6 +168,7 @@
 
     <footer>
         <div class="footer-brand">CENTRALE GAZ</div>
+        <a href="tel:+40761198318" class="phone-link footer-phone">📞 0761 198 318</a>
         <p>&copy; 2025 CENTRALE GAZ. Toate drepturile rezervate.</p>
     </footer>
 
