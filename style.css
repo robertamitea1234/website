@@ -341,6 +341,27 @@ body {
     color: #8b95a1 !important;
 }
 
+.form-feedback {
+    max-width: 500px;
+    margin: 20px auto 0;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.form-feedback.success {
+    background: rgba(90, 200, 130, 0.15);
+    border: 1px solid rgba(90, 200, 130, 0.4);
+    color: #7fe0a8;
+}
+
+.form-feedback.error {
+    background: rgba(232, 96, 44, 0.15);
+    border: 1px solid rgba(232, 96, 44, 0.5);
+    color: #f5a582;
+}
+
 /* ---------- FOOTER ---------- */
 footer {
     background: #0f1720;
