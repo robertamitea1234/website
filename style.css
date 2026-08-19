@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f5f2;
+    color: #222;
+}
+
+/* ---------- HERO ---------- */
+.main {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c2b3a 0%, #16202c 55%, #0f1720 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.main .overlay {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 120%;
+    height: 140%;
+    background:
+        radial-gradient(circle at 25% 30%, rgba(232, 96, 44, 0.35), transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(232, 96, 44, 0.2), transparent 50%);
+}
+
+.main-content {
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.brand-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.main h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.main p {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    color: #dfe3e8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #e8602c;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #c94e20;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* ---------- ICON PANELS (replace old photo blocks) ---------- */
+.icon-panel {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #16202c 0%, #1c2b3a 100%);
+    box-shadow: 0 12px 30px rgba(28, 43, 58, 0.25);
+}
+
+.icon-panel svg {
+    width: 45%;
+    height: 45%;
+}
+
+.icon-panel.alt {
+    background: linear-gradient(135deg, #e8602c 0%, #f08a4b 100%);
+    box-shadow: 0 12px 30px rgba(232, 96, 44, 0.3);
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+.description_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 60px;
+}
+
+.description_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 60px;
+}
+
+.description-1-image,
+.description-2-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.description-text-1,
+.description-text-2 {
+    flex: 1;
+    min-width: 280px;
+}
+
+.description-text-1 h2,
+.description-text-2 h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #16202c;
+}
+
+.description-text-1 p,
+.description-text-2 p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials {
+    background: #fff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #16202c;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    padding: 25px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.testimonial-card .stars {
+    color: #e8602c;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-card span {
+    font-weight: 500;
+    color: #16202c;
+}
+
+/* ---------- SERVICES ---------- */
+.services {
+    background: #f0ede8;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #16202c;
+}
+
+.services > p {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+}
+
+.service-card .icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #fdece2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.service-card .icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: #e8602c;
+}
+
+.service-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: #16202c;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ---------- CONTACT / OFERTA ---------- */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background: #16202c;
+    color: white;
+}
+
+.contact h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    color: #c9cfd6;
+    line-height: 1.7;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.contact-note {
+    margin-top: 20px !important;
+    font-size: 0.85rem;
+    color: #8b95a1 !important;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #0f1720;
+    color: #aab2bb;
+    text-align: center;
+    padding: 30px 10%;
+    font-size: 0.9rem;
+}
+
+footer .footer-brand {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 2.3rem;
+    }
+
+    .description_1,
+    .description_2 {
+        flex-direction: column;
+        padding: 60px 6%;
+    }
+
+    .description-1-image,
+    .description-2-image {
+        max-width: 320px;
+    }
+}
